@@ -2,11 +2,11 @@
 
 let
   pname = "bambustudio";
-  version = "2.8.0";
+  version = "2.9.1";
 
   src = pkgs.fetchurl {
-    url = "https://github.com/bambulab/BambuStudio/releases/download/v02.08.00.50/BambuStudio_ubuntu24.04-v02.08.00.50-20260625193201.AppImage";
-    hash = "sha256-JGy2ua2TtLSmX2MTJN1/CYvyEZiiw5g36RqmoDk+TdQ=";
+    url = "https://github.com/bambulab/BambuStudio/releases/download/v02.09.01.70/BambuStudio_ubu24-v02.09.01.70-20261103183404.AppImage";
+    hash = "sha256-Zo2rsb5Tx1gYnta8iZNShd6l4K9GIWVGsbr9aILpr/A=";
   };
 
   appimageContents = pkgs.appimageTools.extractType2 { inherit pname version src; };
