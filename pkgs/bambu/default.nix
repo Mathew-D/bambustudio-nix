@@ -9,7 +9,7 @@ let
     hash = "sha256-Zo2rsb5Tx1gYnta8iZNShd6l4K9GIWVGsbr9aILpr/A=";
   };
 
-  appimageContents = pkgs.appimageTools.extractType2 { inherit pname version src; };
+  appimageContents = pkgs.appimageTools.extract { inherit pname version src; };
   caBundle = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
 
   appimage = pkgs.appimageTools.wrapType2 {
